@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "IntroLayer.h"
+#import "ServerCallPerformMovements.h"
 
 @implementation AppController
 
@@ -86,6 +87,15 @@
 	
 	// make main window visible
 	[window_ makeKeyAndVisible];
+    
+#warning Strictly for testing. Remove this afterwards.
+    NSDictionary *sampleMovement = [NSDictionary dictionaryWithObjectsAndKeys:@"2",@"magnitude",@"2.5",@"angle", nil];
+    NSArray *movements = [NSArray arrayWithObject:sampleMovement];
+    [ServerCallPerformMovements sendMovements:movements success:^{
+        [CustomLog logMessage:@"Success!" WithLogLevel:LOG_LEVEL_INFO]; 
+    } failure:^(NSError *err) {
+        [CustomLog logMessage:[NSString stringWithFormat:@"%@", err] WithLogLevel:LOG_LEVEL_ERROR];
+    }];
 	
 	return YES;
 }
