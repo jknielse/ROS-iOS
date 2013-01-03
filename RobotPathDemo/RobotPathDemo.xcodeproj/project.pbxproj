@@ -163,8 +163,6 @@
 		237075571694D12B00390E02 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237075561694D12B00390E02 /* MobileCoreServices.framework */; };
 		237075591694D15300390E02 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 237075581694D15300390E02 /* libz.dylib */; };
 		2370755B1694D1F900390E02 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2370755A1694D1F900390E02 /* libxml2.dylib */; };
-		237075641694E82A00390E02 /* APICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 237075611694E82A00390E02 /* APICall.m */; };
-		237075651694E82A00390E02 /* JSONAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 237075631694E82A00390E02 /* JSONAPICall.m */; };
 		2370756B1694E97300390E02 /* ServerCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370756A1694E97300390E02 /* ServerCall.m */; };
 /* End PBXBuildFile section */
 
@@ -493,12 +491,6 @@
 		237075561694D12B00390E02 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		237075581694D15300390E02 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2370755A1694D1F900390E02 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		237075601694E82A00390E02 /* APICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICall.h; sourceTree = "<group>"; };
-		237075611694E82A00390E02 /* APICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICall.m; sourceTree = "<group>"; };
-		237075621694E82A00390E02 /* JSONAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPICall.h; sourceTree = "<group>"; };
-		237075631694E82A00390E02 /* JSONAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPICall.m; sourceTree = "<group>"; };
-		237075661694E86900390E02 /* APICallDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICallDelegate.h; sourceTree = "<group>"; };
-		237075671694E86900390E02 /* APICallProtectedMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICallProtectedMethods.h; sourceTree = "<group>"; };
 		237075691694E97300390E02 /* ServerCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCall.h; sourceTree = "<group>"; };
 		2370756A1694E97300390E02 /* ServerCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCall.m; sourceTree = "<group>"; };
 		2370756C1694F23F00390E02 /* ServerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
@@ -980,12 +972,6 @@
 			children = (
 				231C524116950291003BFC6F /* Utilities */,
 				237075681694E94000390E02 /* ServerInterface */,
-				237075661694E86900390E02 /* APICallDelegate.h */,
-				237075671694E86900390E02 /* APICallProtectedMethods.h */,
-				237075601694E82A00390E02 /* APICall.h */,
-				237075611694E82A00390E02 /* APICall.m */,
-				237075621694E82A00390E02 /* JSONAPICall.h */,
-				237075631694E82A00390E02 /* JSONAPICall.m */,
 			);
 			name = HelperClasses;
 			sourceTree = "<group>";
@@ -1309,8 +1295,6 @@
 				2370753F1694D0F100390E02 /* ASIS3Request.m in Sources */,
 				237075401694D0F100390E02 /* ASIS3ServiceRequest.m in Sources */,
 				237075511694D0F100390E02 /* Reachability.m in Sources */,
-				237075641694E82A00390E02 /* APICall.m in Sources */,
-				237075651694E82A00390E02 /* JSONAPICall.m in Sources */,
 				2370756B1694E97300390E02 /* ServerCall.m in Sources */,
 				231C5245169502B6003BFC6F /* CustomLog.m in Sources */,
 				231C524B16950982003BFC6F /* ServerCallPerformMovements.m in Sources */,
