@@ -9,7 +9,7 @@
 #ifndef RobotPathDemo_ServerConfig_h
 #define RobotPathDemo_ServerConfig_h
 
-#define SERVER_BASE_URL @"http://ec2-54-235-235-41.compute-1.amazonaws.com:54545"
+#define SERVER_BASE_URL @"http://ec2-23-20-131-137.compute-1.amazonaws.com:54545"
 
 #define MAX_RETRIES 3
 

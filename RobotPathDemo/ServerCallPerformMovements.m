@@ -7,6 +7,7 @@
 //
 
 #import "ServerCallPerformMovements.h"
+#import "ASIHTTPRequest.h"
 
 @implementation ServerCallPerformMovements
 
@@ -15,6 +16,8 @@
     ServerCallPerformMovements *newCall = [[self alloc] init];
     newCall->successblock = success;
     newCall->failureblock = failure;
+    
+#warning Get rid of these, they leak memory. Use ARC instead.
     NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:movements,@"movements",nil];
     [newCall sendGETRequestForLocation:@"move/performmovements" WithRequestKeysAndValues:dictionary];
 }
