@@ -128,9 +128,12 @@
             CGFloat angle1 = [self AngleOf:prevprevPoint :prevPoint];
             CGFloat angle2 = [self AngleOf:prevPoint :point];
             
-            CGFloat diff = ABS(angle1 - angle2);
+            CGFloat diff = (angle1 - angle2);
             if (diff > 180.0)
                 diff = 360.0-diff;
+            
+            if (diff < -180.0)
+                diff = -360.0-diff;
             
             NSNumber *angle = [NSNumber numberWithFloat:(diff/180.0 * PI)];
             NSNumber *magnitude = [NSNumber numberWithFloat:[Converter DistanceBetween:prevPoint :point]];
